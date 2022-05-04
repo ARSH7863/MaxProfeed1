@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-[#3A4374] bg-[#F7F8FD];
+  }
+}
+
+.tab.tab-active {
+  @apply border-primary;
+}
+
+.input,
+.textarea {
+  @apply bg-gray-100;
+}
+
+.bg-gradient {
+  background: radial-gradient(
+    ellipse at right top,
+    rgba(232, 77, 112, 1) 0%,
+    rgba(163, 55, 246, 1) 60%,
+    rgba(40, 167, 237, 1) 100%
+  );
+}
+
+/* react masonry */
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}

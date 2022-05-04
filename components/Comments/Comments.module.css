@@ -1,0 +1,18 @@
+.reply {
+  position: relative;
+}
+
+.reply:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: -3rem;
+  width: 1px;
+  opacity: 0.1;
+  @apply bg-secondary;
+}
+
+.comment:not(:last-child) {
+  border-bottom-width: 1px;
+}
